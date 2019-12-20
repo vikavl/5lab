@@ -1,0 +1,31 @@
+{
+  "name": "5lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint .",
+    "prettier": "prettier --write *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikavl/5lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikavl/5lab/issues"
+  },
+  "homepage": "https://github.com/vikavl/5lab#readme",
+  "dependencies": {
+    "eslint": "^6.7.2",
+    "husky": "^3.1.0",
+    "prettier": "^1.19.1"
+  },
+  "husky":{
+    "hooks": {
+      "pre-commit": "npm run prettier",
+      "pre-push": "npm test"
+    }
+  }
+}
